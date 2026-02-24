@@ -4,12 +4,12 @@ const port = 3000;
 
 // Route handler for root path — preserves original "Hello, World!" response
 app.get('/', (req, res) => {
-  res.send('Hello, World!\n');
+  res.type('text').send('Hello, World!\n');
 });
 
 // Route handler for /evening path — new endpoint returning "Good evening"
 app.get('/evening', (req, res) => {
-  res.send('Good evening');
+  res.type('text').send('Good evening');
 });
 
 // Start the Express server on port 3000
