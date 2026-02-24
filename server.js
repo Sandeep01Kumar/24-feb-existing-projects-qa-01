@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+app.disable('x-powered-by');
 const port = 3000;
 
 // Route handler for root path — preserves original "Hello, World!" response
